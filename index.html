@@ -1,0 +1,114 @@
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Curriculo - Fábio Carneiro</title>
+        <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body layout="row" ng-app="curriculum" ng-controller="HomeController">
+        <md-sidenav layout="column" class="sidebar md-sidenav-left md-whiteframe-z2" md-component-id="left"
+                    md-is-locked-open="$mdMedia('gt-md')">
+
+            <img class="sidebar-picture" src="https://avatars1.githubusercontent.com/u/1375034?v=3&s=460"/>
+
+            <md-content flex layout-padding>
+                <h3>Technologies</h3>
+                <br>
+
+                <div ng-repeat="item in technologies">
+                    {{ item.name }}
+                    <md-slider class="md-primary" flex min="0" max="100" step="0" ng-model="item.level"
+                               aria-label="item.name"></md-slider>
+                </div>
+            </md-content>
+        </md-sidenav>
+        <md-content layout="row" layout-align="center" flex class="main-content" md-scroll-y>
+            <div flex-sm="100" flex-gt-sm="80">
+                <br>
+                <md-card>
+                    <md-list>
+                        <md-list-item class="md-3-line">
+                            <md-icon class="material-icons" aria-label="business">school</md-icon>
+                            <div class="md-list-item-text">
+                                <div class="md-title">Education</div>
+                            </div>
+                        </md-list-item>
+                        <md-list-item class="md-3-line" ng-repeat="item in education">
+                            <div class="md-list-item-text md-offset">
+                                <h3>{{ item.schoolName }}</h3>
+                                <h4>{{ item.course }}</h4>
+                            </div>
+                        </md-list-item>
+                    </md-list>
+                </md-card>
+                <br>
+                <md-card>
+                    <md-list>
+                        <md-list-item class="md-3-line">
+                            <md-icon class="material-icons" aria-label="language">language</md-icon>
+                            <div class="md-list-item-text">
+                                <div class="md-title">Language Education</div>
+                            </div>
+                        </md-list-item>
+                        <md-list-item class="md-3-line" ng-repeat="item in language">
+                            <div class="md-list-item-text md-offset">
+                                <h3>{{ item.course }}</h3>
+                                <h4>{{ item.grade }}</h4>
+
+                                <p>{{ item.place }}</p>
+                            </div>
+                        </md-list-item>
+                    </md-list>
+                </md-card>
+                <br>
+                <md-card>
+                    <md-list>
+                        <md-list-item class="md-3-line">
+                            <md-icon class="material-icons" aria-label="business">business</md-icon>
+                            <div class="md-list-item-text">
+                                <div class="md-title">Work Experiences</div>
+                            </div>
+                        </md-list-item>
+                        <md-list-item class="md-3-line" ng-repeat="item in experience">
+                            <div class="md-list-item-text md-offset">
+                                <h3>{{ item.companyName }}</h3>
+                                <h4>{{ item.role }}</h4>
+
+                                <p>{{ item.fromDate }} - {{ item.toDate }}, ({{ item.toDate | amDifference :
+                                    item.fromDate : 'months' }} months)</p>
+                            </div>
+                        </md-list-item>
+                    </md-list>
+                </md-card>
+                <br>
+                <md-card>
+                    <md-list>
+                        <md-list-item class="md-3-line">
+                            <md-icon class="material-icons" aria-label="business">public</md-icon>
+                            <div class="md-list-item-text">
+                                <div class="md-title">Opensource Contributions</div>
+                            </div>
+                        </md-list-item>
+                        <md-list-item class="md-3-line" ng-repeat="item in opensourceContributions">
+                            <div class="md-list-item-text md-offset">
+                                <h3>{{ item.projectName }}</h3>
+                                <h4>{{ item.status }}</h4>
+
+                                <p>{{ item.description }}</p>
+                            </div>
+                        </md-list-item>
+                    </md-list>
+                </md-card>
+                <br>
+            </div>
+        </md-content>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="bower_components/angular-material/angular-material.min.js"></script>
+        <script src="bower_components/moment/moment.js"></script>
+        <script src="bower_components/angular-moment/angular-moment.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
