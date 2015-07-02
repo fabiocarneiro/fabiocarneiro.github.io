@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body layout="row" ng-app="curriculum" ng-controller="HomeController" ng-cloak>
+    <body layout="row" ng-app="curriculum" ng-controller="HomeController" ng-cloak="">
         <md-sidenav layout="column" class="sidebar md-sidenav-left md-whiteframe-z2" md-component-id="left"
                     md-is-locked-open="$mdMedia('gt-md')">
 
@@ -17,7 +17,7 @@
 
                 <p>Name: {{ info.name }}</p>
 
-                <p>Birthdate: {{ info.birthDate }} ({{ moment().diff(info.birthDate, 'years')}} years)</p>
+                <p>Birthdate: {{ info.birthDate }} ({{ info.birthDate | amDifference : null : 'years' }} years)</p>
 
                 <p>Email: {{ info.email | reverse }}</p>
 

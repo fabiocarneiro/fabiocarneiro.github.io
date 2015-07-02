@@ -85,37 +85,37 @@ angular.module('curriculum', ['ngMaterial', 'angularMoment'])
             {
                 'projectName': 'Zend Framework 2',
                 'status': '8 merged, 1 open, 9 total',
-                'description': 'Improved MVC Controller error handling, refactored some InputFilter classes',
+                'description': 'Improved MVC Controller error handling, refactored some InputFilter classes'
             },
             {
                 'projectName': 'Doctrine 2 (common + DoctrineModule + DoctrineORMModule)',
                 'status': '2 merged, 3 open, 5 total',
-                'description': 'Minor fixes, added embeddables support in Doctrine Hydrator',
+                'description': 'Minor fixes, added embeddables support in Doctrine Hydrator'
             },
             {
                 'projectName': 'DoctrineMongoODMModule',
                 'status': '3 merged, 0 open, 3 total',
-                'description': 'Composer settings, factory for Doctrine Hydrator to make DocumentManager default',
+                'description': 'Composer settings, factory for Doctrine Hydrator to make DocumentManager default'
             },
             {
                 'projectName': 'TwbBundle',
                 'status': '4 merged, 1 open, 5 total',
-                'description': 'Module that add Twitter Bootstrap styling to ZF2 Forms out of the box',
+                'description': 'Module that add Twitter Bootstrap styling to ZF2 Forms out of the box'
             },
             {
                 'projectName': 'Piwik',
                 'status': '1 merged, 1 open, 2 total',
-                'description': 'Major opensource analytics platform. Fixes and best practices discussion',
+                'description': 'Major opensource analytics platform. Fixes and best practices discussion'
             },
             {
                 'projectName': 'DoctrineMoneyModule',
                 'status': 'maintainer',
-                'description': 'Created this module that connects mathiasverraes/money with ZF2',
+                'description': 'Created this module that connects mathiasverraes/money with ZF2'
             },
             {
                 'projectName': 'RepositoryManager',
                 'status': 'maintainer',
-                'description': 'Simple service that stores repositories of different types',
+                'description': 'Simple service that stores repositories of different types'
             }
         ];
 
