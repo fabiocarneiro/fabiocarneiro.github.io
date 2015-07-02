@@ -13,8 +13,20 @@
             <img class="sidebar-picture" src="https://avatars1.githubusercontent.com/u/1375034?v=3&s=460"/>
 
             <md-content flex layout-padding>
-                <h3>Technologies</h3>
+                <h3>Contact Info</h3>
+
+                <p>Name: {{ info.name }}</p>
+
+                <p>Birthdate: {{ info.birthDate }} ({{ moment().diff(info.birthDate, 'years')}} years)</p>
+
+                <p>Email: {{ info.email | reverse }}</p>
+
+                <p>Telephone: {{ info.telephone | reverse }}</p>
+
+                <p>Mobile: {{ info.mobile | reverse }}</p>
                 <br>
+
+                <h3>Technologies</h3>
 
                 <div ng-repeat="item in technologies">
                     {{ item.name }}

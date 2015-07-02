@@ -1,5 +1,24 @@
 angular.module('curriculum', ['ngMaterial', 'angularMoment'])
+    .filter("reverse", function () {
+        return function (input) {
+            var result = "";
+            input = input || "";
+            for (var i = 0; i < input.length; i++) {
+                result = input.charAt(i) + result;
+            }
+            return result;
+        };
+    })
     .controller('HomeController', ['$scope', function ($scope) {
+
+        $scope.info = {
+            'name': 'Fabio Carneiro',
+            'birthDate': '1988-11-26',
+            'email': 'moc.liamg@scehaf',
+            'telephone': '810620235155+',
+            'mobile': '1216808995155+'
+        };
+
         $scope.experience = [
             {
                 'companyName': 'Squid Fácil',
