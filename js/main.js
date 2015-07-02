@@ -63,7 +63,7 @@ angular.module('curriculum', ['ngMaterial', 'angularMoment'])
                 'course': 'Incomplete'
             },
             {
-                'schoolName': 'High School @Instituto Superior de Educaçao do Rio de Janeiro',
+                'schoolName': 'High School @Instituto Superior de Educação do Rio de Janeiro',
                 'course': 'High School grade'
             }
         ];
