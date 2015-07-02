@@ -9,6 +9,11 @@ angular.module('curriculum', ['ngMaterial', 'angularMoment'])
             return result;
         };
     })
+    .filter("negative", function () {
+        return function (input) {
+            return input * -1;
+        };
+    })
     .controller('HomeController', ['$scope', function ($scope) {
 
         $scope.info = {

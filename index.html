@@ -17,7 +17,7 @@
 
                 <p>Name: {{ info.name }}</p>
 
-                <p>Birthdate: {{ info.birthDate }} ({{ info.birthDate | amDifference : null : 'years' }} years)</p>
+                <p>Birthdate: {{ info.birthDate }} ({{ info.birthDate | amDifference : null : 'years' | negative }} years)</p>
 
                 <p>Email: {{ info.email | reverse }}</p>
 
