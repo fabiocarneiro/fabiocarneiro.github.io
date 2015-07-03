@@ -1,4 +1,4 @@
-angular.module('curriculum', ['ngMaterial', 'angularMoment'])
+angular.module('curriculo', ['ngMaterial', 'angularMoment'])
     .filter("reverse", function () {
         return function (input) {
             var result = "";

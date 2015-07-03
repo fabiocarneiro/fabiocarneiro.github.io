@@ -2,6 +2,26 @@
     background: #eeeeee;
 }
 
-.sidebar .sidebar-picture {
-    height: 100%;
+.inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.inner:focus {
+    outline: none;
+}
+
+.inner > img {
+    height: auto;
+    width: 100%;
+    display: block;
+    transform-origin: 50% 0;
+}
+
+.nav-header {
+    flex-shrink: 0;
+    z-index: 2;
 }
