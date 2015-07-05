@@ -123,9 +123,9 @@ angular.module('curriculo', ['ngMaterial', 'angularMoment'])
                 'description': 'Simple service that stores repositories of different types'
             },
             {
-                'projectName': 'This CV',
+                'projectName': 'This Resume',
                 'status': 'maintainer',
-                'description': 'This CV is opensource and you can use it by forking fabiocarneiro.github.io repository into yourusername.github.io, and modifying the main.js info'
+                'description': 'This Resume is opensource and you can use it by forking fabiocarneiro.github.io repository into yourusername.github.io, and modifying the main.js info'
             }
         ];
 
