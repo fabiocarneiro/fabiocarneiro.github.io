@@ -121,10 +121,19 @@ angular.module('curriculo', ['ngMaterial', 'angularMoment'])
                 'projectName': 'RepositoryManager',
                 'status': 'maintainer',
                 'description': 'Simple service that stores repositories of different types'
+            },
+            {
+                'projectName': 'This CV',
+                'status': 'maintainer',
+                'description': 'This CV is opensource and you can use it by forking fabiocarneiro.github.io repository into youusername.github.io, and modifying the main.js info'
             }
         ];
 
         $scope.technologies = [
+            {
+                'name': 'PHP',
+                'level': 95
+            },
             {
                 'name': 'Zend Framework 2',
                 'level': 90
@@ -174,7 +183,7 @@ angular.module('curriculo', ['ngMaterial', 'angularMoment'])
                 'level': 90
             },
             {
-                'name': 'API\'s',
+                'name': 'Webservices',
                 'level': 80
             },
             {
