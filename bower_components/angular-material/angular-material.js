@@ -10880,6 +10880,10 @@ function SliderDirective($$rAF, $window, $mdAria, $mdUtil, $mdConstant, $mdThemi
     function redrawTicks() {
       if (!angular.isDefined(attr.mdDiscrete)) return;
 
+      if (0 >= step) {
+        throw new Error('Step must be greater than zero when in discrete mode');
+      }
+
       var numSteps = Math.floor( (max - min) / step );
       if (!tickCanvas) {
         var trackTicksStyle = $window.getComputedStyle(tickContainer[0]);

@@ -34,9 +34,9 @@
 
                     <h3>Technologies</h3>
 
-                    <div ng-repeat="item in technologies">
+                    <div class="technologies" ng-repeat="item in technologies">
                         {{ item.name }}
-                        <md-slider class="md-primary" md-discrete flex min="0" max="100" step="0" ng-model="item.level"
+                        <md-slider class="md-primary" ng-disabled="true" flex min="0" max="100" step="0" ng-model="item.level"
                                    aria-label="item.name"></md-slider>
                     </div>
                 </div>

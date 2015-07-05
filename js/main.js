@@ -30,7 +30,6 @@ angular.module('curriculo', ['ngMaterial', 'angularMoment'])
                 'role': 'CTO',
                 'fromDate': '2014-09-01',
                 'toDate': '2015-05-08'
-
             },
             {
                 'companyName': 'Squid Fácil',

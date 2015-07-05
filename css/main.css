@@ -25,3 +25,8 @@
     flex-shrink: 0;
     z-index: 2;
 }
+
+.technologies md-slider[disabled]:not(.md-min) .md-thumb:after {
+    border-color: rgb(16,108,200);
+    background-color: rgb(16,108,200);
+}
