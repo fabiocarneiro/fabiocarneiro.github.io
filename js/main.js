@@ -125,7 +125,7 @@ angular.module('curriculo', ['ngMaterial', 'angularMoment'])
             {
                 'projectName': 'This CV',
                 'status': 'maintainer',
-                'description': 'This CV is opensource and you can use it by forking fabiocarneiro.github.io repository into youusername.github.io, and modifying the main.js info'
+                'description': 'This CV is opensource and you can use it by forking fabiocarneiro.github.io repository into yourusername.github.io, and modifying the main.js info'
             }
         ];
 
